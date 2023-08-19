@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+}
+ 
+a {
+  list-style: none;
+  color: black;
+}
+ 
+button,
+select {
+  padding: 5px 10px;
+  min-width: 50px;
+  margin: 5px;
+  font-size: 18px;
+}
+ 
+label {
+  width: 200px;
+  display: block;
+}
+ 
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+ 
+.Navbar {
+  background: #515f7d;
+  color: white;
+  padding: 0px 20px;
+  box-shadow: 0px 1px 2px gray;
+  width: 100%;
+  padding: 5px;
+}
+ 
+.Navbar li {
+  list-style: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+ 
+.card {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #94a7c8;
+  border-radius: 4px;
+}
+ 
+.ProjectCard h3::after {
+  content: url("https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/icon-expand.png");
+  margin-left: 5px;
+}
+ 
+.EditProjectPage,
+.AddProject,
+.AddTask {
+  background: #f9eec3;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+ 
+.EditProjectPage {
+  background-color: rgb(239, 196, 88);
+}
+ 
+.EditProjectPage form,
+.AddTask form,
+.AddProject form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.AddTask button,
+.AddProject button {
+  display: block;
+}
+ 
+.TaskCard {
+  background-color: #dfeef9;
+}
+
+.projects-row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-col {
+  margin: 50px;
+}
+
+button,
+select {
+  padding: 5px 10px;
+  min-width: 50px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 10%;
+  color: #ffffff;
+  background-color: black;
+  border: none;
+	border-radius:5%;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+input[type=submit] {
+  padding: 5px 10px;
+  min-width: 50px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 10%;
+  color: #ffffff;
+  background-color: red;
+  border: none;
+	border-radius:5%;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.light {
+  background-color: #efeded;
+}
+ 
+.dark {
+  background-color: #18191a;
+}
+ 
+.Navbar.light {
+  background-color: #ffffff;
+}
+ 
+.Navbar.dark {
+  background-color: #252526;
+}
+ 
+.light a,
+.light p,
+.light h1,
+.light h3 {
+  color: #000000;
+}
+ 
+.dark a,
+.dark p,
+.dark h1,
+.dark h3 {
+  color: #ffffff;
+}
+
+.HomePage,
+.ProjectsPage {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.error-message{
+  color: red
+}
