@@ -29,7 +29,7 @@ const Signup = (props) => {
             navigate('/login')
         } catch (error) {
             console.log('error: ', error);
-            setErrorMessage(error.response.data.message)
+            error.response && setErrorMessage(error.response.data.message)
         }
     }
 

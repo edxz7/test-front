@@ -1,6 +1,4 @@
-import axios from "axios";
 import { createContext,  useState } from "react"
-import { API_URL } from "../utils/constants";
 import { useEffect } from "react";
 import authService from "../services/auth.service";
 

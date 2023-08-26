@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-let baseUrl = process.env.ENV === 'production'
-    ? process.env.SERVER_URL
+let baseUrl = process.env.REACT_APP_ENV === 'production'
+    ? process.env.REACT_APP_SERVER_URL
     : 'http://localhost:5005';
 
 
@@ -11,11 +11,22 @@ const service = axios.create({
 })
 
 service.interceptors.request.use((config) => {
+
     const storedToken = localStorage.getItem('authToken')
     if(storedToken) {
         config.headers = { Authorization: `Bearer ${storedToken}`}
     }
     return config
 })
+
+axios.interceptors.response.use(
+    response => response,
+    error => {
+        console.error('error: ', error);
+      if (error.response.status === 401) {
+        window.location.href = '/';
+      }
+    }
+  );
 
 export default service;
